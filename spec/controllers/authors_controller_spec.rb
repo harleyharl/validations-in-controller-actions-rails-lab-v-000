@@ -14,7 +14,7 @@ RSpec.describe AuthorsController do
   describe "creating a valid author" do
     let(:bro_found) { Author.find_by(name: "S. Bro") }
 
-    before { post :create, params: { name: "S. Bro", email: "bro@sbahj.info"} }
+    before { post :create, params:{ name: "S. Bro", email: "bro@sbahj.info"} }
 
     it "creates successfully" do
       expect(bro_found).to be_a(Author)
@@ -42,7 +42,7 @@ RSpec.describe AuthorsController do
     end
 
     it "renders the form again" do
-      post :create, bad_attributes
+      post :create, params: bad_attributes
       expect(response).to render_template(:new)
     end
   end
