@@ -26,7 +26,7 @@ RSpec.describe AuthorsController do
   end
 
   describe "creating an invalid author" do
-    let(:bad_attributes) { { email: jeff.email } }
+    let(:bad_attributes) { params: { email: jeff.email } }
     let(:jeff_bad) { Author.create(bad_attributes) }
 
     it "does not create" do
