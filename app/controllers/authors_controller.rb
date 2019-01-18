@@ -1,8 +1,7 @@
 class AuthorsController < ApplicationController
 
   def show
-    # binding.pry
-    # @author = Author.find_by(params[:id])
+# @author = Author.find_by(params[:id])
   end
 
   def new
