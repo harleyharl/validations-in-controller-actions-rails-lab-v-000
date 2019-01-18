@@ -1,7 +1,7 @@
 class AuthorsController < ApplicationController
 
   def show
-    binding.pry
+    # binding.pry
     @author = Author.find_by(params[:id])
   end
 
