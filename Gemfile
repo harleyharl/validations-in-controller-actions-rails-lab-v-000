@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'pry'
-gem 'rails'
+gem 'rails' '4.2'
 gem 'sqlite3'
 gem 'rspec-rails'
 gem 'sass-rails'
